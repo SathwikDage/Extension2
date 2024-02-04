@@ -1,0 +1,13 @@
+{
+  "name": "Pomodoro Timer",
+  "description": "Use this timer :)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "script.js"
+  },
+  "permissions": ["scripting", "activeTab"]
+}

@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 10;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: papayawhip;
+  width: 100px;
+  height: 100px;
+  border: 2px;
+}
+:root {
+  --primary-color: linear-gradient(
+    40deg,
+    #4df086,
+    rgb(182 214 221),
+    #0c0c85,
+    #18181e
+  );
+  --second-color: #17ca9a;
+}
+.dark-theme {
+  --primary-color: linear-gradient(
+    40deg,
+    #ff0000,
+    rgb(182 214 221),
+    #a04a13,
+    #eb2121
+  );
+  --second-color: rgb(217, 119, 77);
+}
+.container {
+  background: var(--primary-color);
+  width: min(40%, 250px);
+  position: fixed;
+  transform: translate(-40%, -32%);
+  top: 10%;
+  left: 90%;
+  padding: 0.8em 0.6em;
+  border-radius: 0.5em;
+  outline: 2px solid #a419db;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.section-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.btn {
+  padding: 0.1em 0.2em;
+  border-radius: 0.5em;
+  background-color: #3e3f43;
+  color: #a9a7a7;
+}
+.btn-focus {
+  background-color: var(--second-color);
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.time-btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6em;
+}
+#time {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+#btn-start,
+#btn-pause {
+  padding: 0.7em 1.43em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+#btn-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1em;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+#icon {
+  width: 36px;
+  position: relative;
+  float: right;
+  margin-bottom: -7px;
+  cursor: pointer;
+}

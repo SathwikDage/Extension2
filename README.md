@@ -1,1 +1,1 @@
-A Pomodoro made as an extension
+A Pomodoro Timer made as an extension
